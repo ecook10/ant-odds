@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
-import AntDataType from './data/ant-data-type';
-import Ants from './ants/ants';
-import LoadAnts from './ants/load-ants';
+import AntDataType from './types/ant-data-type';
+import RaceContent from './components/race-content';
+import LoadAnts from './components/load-ants';
+
+import './App.css';
 
 const App = () => {
     const [antData, setAntData] = useState<AntDataType[]>();
     return (
-        <div>
+        <div className="app">
             <h1>KAntTucky Derby Sportsbook</h1>
-            { !!antData ? <Ants antData={antData} /> : <LoadAnts setAntData={setAntData} />}
+            { !!antData ? <RaceContent antData={antData} /> : <LoadAnts setAntData={setAntData} />}
         </div>
     );
 };

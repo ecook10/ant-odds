@@ -1,6 +1,6 @@
 import React from 'react';
-import AntDataType from '../data/ant-data-type';
 import getAntData from '../data/get-ant-data';
+import AntDataType from '../types/ant-data-type';
 
 const loadData = async (setAntData: (d: AntDataType[]) => void) => {
     const data = await getAntData();

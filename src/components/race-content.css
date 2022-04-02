@@ -1,0 +1,7 @@
+.race-content {
+    display: flex
+}
+
+.race-content > div {
+    width: 50%;
+}

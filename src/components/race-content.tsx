@@ -6,6 +6,8 @@ import WinChance from '../types/win-chance-type';
 import RaceStatus from '../types/race-status';
 import Ant from './ant';
 
+import './race-content.css';
+
 interface Props  {
     antData: AntData[]
 };
@@ -39,7 +41,7 @@ const RaceContent = ({ antData }: Props) => {
     const sortedData = sortBy(dataWithChances, d => (d.winChance || 0) * -1);
 
     return (
-        <div className="content">
+        <div className="race-content">
             <div className="participants">
                 <h2>Race Participants</h2>
                 {sortedData.map((data, i) =>

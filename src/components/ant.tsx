@@ -2,6 +2,8 @@ import React from 'react';
 import AntDataType from '../types/ant-data-type';
 import RaceStatus from '../types/race-status';
 
+import './ant.css';
+
 interface Props extends AntDataType {
     winChance?: number;
     status: RaceStatus;

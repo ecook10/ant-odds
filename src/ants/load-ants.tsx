@@ -12,6 +12,6 @@ interface Props {
 };
 
 const LoadAnts = ({ setAntData }: Props) =>
-    <button onClick={() => loadData(setAntData)}></button>;
+    <button onClick={() => loadData(setAntData)}>Load Data</button>;
 
 export default LoadAnts;

@@ -11,7 +11,7 @@ interface Props extends AntDataType {
 
 const getDisplayChance = (winChance?: number) => {
     if (!winChance) return 'Calculating...';
-    else return winChance;
+    else return winChance.toFixed(3);
 };
 
 const Ant = ({ name, length, color, weight, winChance, status }: Props) => (

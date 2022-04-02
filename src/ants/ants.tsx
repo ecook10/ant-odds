@@ -1,9 +1,9 @@
 import React from 'react';
-import AntData from '../data/ant-data';
+import AntDataType from '../data/ant-data-type';
 import Ant from './ant';
 
 interface Props  {
-    antData: AntData[]
+    antData: AntDataType[]
 };
 
 const Ants = ({ antData }: Props) => (

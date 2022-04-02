@@ -1,7 +1,7 @@
 import React from 'react';
-import AntData from '../data/ant-data';
+import AntDataType from '../data/ant-data-type';
 
-const Ant = ({ name, length, color, weight }: AntData) => (
+const Ant = ({ name, length, color, weight }: AntDataType) => (
     <div>
         <p>Name: {name}</p>
         <p>Length: {length}</p>

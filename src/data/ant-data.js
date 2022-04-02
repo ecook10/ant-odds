@@ -1,4 +1,4 @@
-{
+export default {
 	"ants": [{
 		"name": "Marie ‘Ant’oinette",
 		"length": 12,

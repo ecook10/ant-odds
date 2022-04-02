@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import AntData from './data/ant-data';
+import AntDataType from './data/ant-data-type';
 import Ants from './ants/ants';
 import LoadAnts from './ants/load-ants';
 
 const App = () => {
-    const [antData, setAntData] = useState<AntData[]>();
+    const [antData, setAntData] = useState<AntDataType[]>();
     return (
         <div>
             <h1>KAntTucky Derby Sportsbook</h1>

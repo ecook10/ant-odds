@@ -1,8 +1,8 @@
-interface AntData {
+interface AntDataType {
     name: string;
     length: number;
     color: string;
     weight: number;
 }
 
-export default AntData;
+export default AntDataType;

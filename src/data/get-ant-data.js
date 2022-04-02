@@ -1,8 +1,5 @@
-export default async () => [
-    {
-        name: 'Ant May',
-        length: 2,
-        color: 'RED',
-        weight: 20
-    }
-]
+import antData from './ant-data';
+
+export default async () => {
+    return antData.ants;
+}

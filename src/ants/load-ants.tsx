@@ -1,14 +1,14 @@
 import React from 'react';
-import AntData from '../data/ant-data';
+import AntDataType from '../data/ant-data-type';
 import getAntData from '../data/get-ant-data';
 
-const loadData = async (setAntData: (d: AntData[]) => void) => {
+const loadData = async (setAntData: (d: AntDataType[]) => void) => {
     const data = await getAntData();
     setAntData(data);
 };
 
 interface Props {
-    setAntData: (a: AntData[]) => void
+    setAntData: (a: AntDataType[]) => void
 };
 
 const LoadAnts = ({ setAntData }: Props) =>
